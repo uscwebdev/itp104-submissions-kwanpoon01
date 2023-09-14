@@ -4,6 +4,13 @@
         <title>Fred Poon | Student Page</title>
 
         <style>
+            #main {
+                width: 900px;
+			    margin-left: auto;
+			    margin-right: auto;
+                padding: 15px;
+            }
+
             strong {
                 background-color: darkred;
                 color: white;
@@ -13,32 +20,84 @@
                 width: auto;
                 height: 200px;
             }
+
+            #wrapper1 {
+                display: flex;
+            }
+           
+            #nested1 {
+                width: 450px;
+            }
+
+            #nested2 {
+                float: right;
+            }
+
+            .clearfloat {
+                clear: both;
+            }
+
+            #wrapper2 {
+                display: flex;
+            }
+            
+            #nested3 {
+                width: 450px;
+            }
+
+            #nested4 {
+                float: right;
+            }
         </style>
     </head>
+    <div id="main">
     <body>
 
         <h1>Fred Poon</h1>
         <p><a href="mailto:kwanpoon@usc.edu">kwanpoon@usc.edu</a></p>
-        <p>Favorite Color: <strong>DarkRed</strong></p>
-        <p>Favorite Website: <a target="_blank" href="https://www.nba.com/">NBA.com</a></p>
-        <img src="https://images.unsplash.com/photo-1581852549708-72910bd52cff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80" alt="Watch NBA Games">
-        <p>Fall 2023 Schedule</p>
-        <ul>
-            <li>HP 340 Health Behavior Statistical Methods</li>
-            <li>RXRS 402 Human Pharmacology: Challenge of Therapeutics in Society</li>
-            <li>RXRS 416 Medical Products: From Idea to Market</li>
-            <li>ITP 104 Introduction to Web Development</li>
-            <li>EALC 150 Global Chinese Cinema and Cultural Studies</li>
-        </ul>
-        <p>Completed Assignments</p>
-        <ul>
+
+        <hr>
+
+        <div id="wrapper1">
+            <div id="nested1">
+            <p>Favorite Color: <strong>DarkRed</strong></p>
+            <p>Favorite Website: <a target="_blank" href="https://www.nba.com/">NBA.com</a></p>
+            <img src="https://images.unsplash.com/photo-1581852549708-72910bd52cff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80" alt="Watch NBA Games">
+            </div>  
+
+            <div id="nested2">
+            <p>Fall 2023 Schedule</p>
+            <ul>
+                <li>HP 340 Health Behavior Statistical Methods</li>
+                <li>RXRS 402 Human Pharmacology: Challenge of Therapeutics in Society</li>
+                <li>RXRS 416 Medical Products: From Idea to Market</li>
+                <li>ITP 104 Introduction to Web Development</li>
+                <li>EALC 150 Global Chinese Cinema and Cultural Studies</li>
+            </ul>
+            </div>
+        </div>
+        
+        
+    <div class="clearfloat"></div>
+        <hr>
+        
+        <div id="wrapper2">
+            <div id="nested3">
+            <p>Completed Assignments</p>
+            <ul>
             <li><a target="_blank" href="assignment_01/resume.html">Assignment 1: Web Resume</a></li>
             <li><a target="_blank" href="assignment_02/interests.html">Assignment 2: Interests Page</a></li>
-        </ul>
-        <p>Completed Labs</p>
-        <ul>
-            <li>Lab 1: Text Editor, GitHub</li>
-            <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
-            <li><a target="_blank" href="lab_03/resume.html">Lab 3: Updated Resume</a></li>
-        </ul>
+            </ul>
+            </div>
+        
+            <div id="nested4">
+            <p>Completed Labs</p>
+            <ul>
+                <li>Lab 1: Text Editor, GitHub</li>
+                <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
+                <li><a target="_blank" href="lab_03/resume.html">Lab 3: Updated Resume</a></li>
+            </ul>
+            </div>
+        </div>
     </body>
+    </div>
