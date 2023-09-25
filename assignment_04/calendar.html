@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+
+        <style>
+            body {
+                width: 1100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #header {
+                background-image: url(Leo\ Triplet.jpeg);
+                background-size: cover;
+			    background-position: center;
+                height: 300px; 
+			    text-align: center;
+			    line-height: 300px;
+                color: white;
+            } 
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th {
+                width: 157.14px;
+                border: 3px solid black;
+            }
+
+            td {
+                width: 157.14px;
+                border: 3px solid black;
+                height: 150px;
+                vertical-align: text-top;
+                text-align: end;
+
+            }
+
+            .grey {
+                background-color: lightgrey;
+            }
+
+            .important_day {
+                font-size: 15pt;
+                padding: 5px;
+                vertical-align: middle;
+                margin: auto;
+                text-align: center;
+                background-color: white;
+                opacity: 70%;
+                border-radius: 20px;
+                color: black;
+
+            }
+            
+            #bday {
+                font-weight: bolder;
+                background-image: url(leo.jpeg);
+                background-size: cover;
+                color: white;
+            }
+
+            #meteor {
+                font-weight: bolder;
+                background-image: url(meteor.jpeg);
+                background-size: cover;
+                color: skyblue;
+            }
+
+            #school {
+                font-weight: bolder;
+                background-image: url(usc.png);
+                background-size: cover;
+                color: #FFCC00;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>August 2023</h1>
+        </div>
+
+        <table>
+            <tbody>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+
+                <tr>
+                    <td class="grey">30</td>
+                    <td class="grey">31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td id="bday">
+                        12
+                        <div class="important_day">Fred's Birthday</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="meteor">
+                        13
+                        <div class="important_day">The Annual Perseid Meteor Shower</div>
+                    </td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                </tr>
+
+                <tr>
+                    <td>20</td>
+                    <td id="school">
+                        21
+                        <div class="important_day">School Starts</div>
+                    </td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                </tr>
+
+                <tr>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class="grey">1</td>
+                    <td class="grey">2</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
