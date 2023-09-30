@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Fred Poon | Simple Photo Gallery</title>
+
+    <style>
+        body {
+            width: 1000px;
+            margin: auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .thumbnail {
+            height: auto;
+            width: 300px;
+            opacity: 0.7;
+        }
+        
+        .thumbnail:hover {
+            opacity: 1;
+        }
+        
+        .gallery {
+            padding: 10px;
+            float: left;
+            text-align: center;
+        }
+
+        .gallery p {
+            visibility: hidden;
+        }
+
+        .gallery:hover p {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mochi</h1>
+
+    <div class="gallery">
+        <img class="thumbnail" src="food1.jpg" alt="Food1" >
+        <p>Food!!!!</p>
+    </div>
+
+    <div class="gallery">
+        <img class="thumbnail" src="food2.jpg" alt="Food2" >
+        <p>More food!!! More food!!!</p>
+    </div>
+
+    <div class="gallery">
+        <img class="thumbnail" src="tired.jpg" alt="tired" >
+        <p>So tired doing nothing everyday</p>
+    </div>
+
+    <div class="gallery">
+        <img class="thumbnail" src="baby.jpg" alt="baby" >
+        <p>I'm a cute little baby cat</p>
+    </div>
+
+    <div class="gallery">
+        <img class="thumbnail" src="shower.jpg" alt="shower" >
+        <p>I hate showering</p>
+    </div>
+
+    <div class="gallery">
+        <img class="thumbnail" src="stare.jpg" alt="stare" >
+        <p>Why are you staring at me?</p>
+    </div>
+</body>
