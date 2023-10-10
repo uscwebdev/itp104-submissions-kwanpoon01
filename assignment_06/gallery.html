@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fred Poon | Gallery</title>
+
+        <style>
+            body {
+                background-color: #fdb927;
+            }
+            
+            #header {
+                margin: 0px;
+                height: 300px; 
+                text-align: center;
+                line-height: 300px;
+                background-image: url("img/crypto.jpeg");
+                background-size: cover;
+                background-position: center;
+                color: white;
+                text-shadow: 0px 0px 10px black;
+                font-family: "Apple Chancery", cursive;
+            }
+
+            #navbar {
+                box-shadow: 0px 2px 5px #ccc;
+                background-color: black;
+                border-bottom: 3px solid #ccc;
+                height: 100px;
+            }
+
+            #nav {
+                width: 600px;
+                height: 100px;
+                margin: auto;
+                font-size: 20px;
+            }
+
+            #nav ul {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #nav li {
+                position: relative;
+                text-align: center;
+                float: left;
+                width: 300px;
+                background-color: black;
+            }
+
+            #nav a {
+                color: white;
+                line-height: 50px;
+                display: block;
+                width: 300px;
+                text-decoration: none;
+            }
+
+            #nav ul ul {
+                position: absolute;
+                top: 55px;
+                right: 0px;
+                display: none;
+                z-index: 1;
+            }
+
+            #nav li:hover >ul {
+                display: block;
+            }
+
+            #nav li:hover >a, #nav #active-nav {
+                color: #fdb927;
+                border-bottom: 5px solid #fdb927;
+            }
+
+            #main {
+                width: 1100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .photo {
+                background-color: lightgrey;
+                float: left;
+                margin: 10px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            #image1 {
+                width: 370px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image1 img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            #image2 {
+                width: 220px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image2 img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            #image3 {
+                width: 450px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image3 img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            #image4 {
+                width: 710px;
+                height: 420px;
+                overflow: hidden;
+            }
+
+            #image4 img {
+                object-fit: cover;
+                height: 100%;
+            }
+
+            #image5 {
+                width: 350px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image5 img {
+                object-fit: cover;
+                height: 100%;
+            }
+
+            #image6 {
+                width: 350px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image6 img {
+                object-fit: cover;
+                height: 100%;
+            }
+
+            #image7 {
+                width: 255px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image7 img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            #image8 {
+                width: 255px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image8 img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            #image9 {
+                width: 255px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image9 img {
+                object-fit: cover;
+                width: 100%;
+            }
+
+            #image10 {
+                width: 255px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            #image10 img {
+                object-fit: cover;
+                height: 100%;
+            }
+
+            .photo p {
+                font-family: "Anton", sans-serif;
+                display: none;
+                color: black;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                font-size: medium;
+            }
+        
+            .photo:hover >img{
+                opacity: 0.2;
+            }
+        
+            .photo:hover p {
+                display: block;
+            }
+
+            #footer {
+                background-color: #323232;
+                text-align: center;
+                color: white;
+                height: 50px;
+                line-height: 50px;
+            }
+            
+
+            .clearfloat {
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Gallery</h1>
+        </div> 
+    
+        <div id="navbar">
+            <div id="nav">
+                <ul>
+                    <li><a href="interests.html"><b>Home</b></a>
+                        <ul>
+                            <li><a href="interests.html#history"><b>History</b></a></li>
+                            <li><a href="interests.html#retired-jerseys"><b>Retired Jerserys</b></a></li>
+                            <li><a href="interests.html#winning-time"><b>Winning Time</b></a></li>
+                        </ul>
+                    </li> 
+                    
+                    <li><a id="active-nav" href="gallery.html"><b>Photo Gallery</b></a></li>
+                </ul>
+                <div class="clearfloat"></div>
+            </div>
+            <div class="clearfloat"></div>
+        </div>
+
+        <div class="clearfloat"></div>
+        
+        <div id="main">
+                <div class="photo" id="image1">
+                    <img src="img/JB.jpeg" alt="Dr. Jerry Buss">
+                    <p><b>Former owner: Late Dr. Jerry Buss</b></p>
+                </div>
+                <div class="photo" id="image2">
+                    <img src="img/retired.jpg" alt="Retired Jerseys">
+                    <p><b>Retired Jerseys</b></p>
+                </div>
+                <div class="photo" id="image3">
+                    <img src="img/rings.png" alt="Championship Rings">
+                    <p><b>Championship Rings</b></p>
+                </div>
+                <div class="photo" id="image4">
+                    <img src="img/cham-banners.jpeg" alt="Championship Banners">
+                    <p><b>Championship Banners</b></p>
+                </div>
+                <div class="photo" id="image5">
+                    <img src="img/big3.jpeg" alt="Big 3">
+                    <p><b>Lakers' Big 3</b></p>
+                </div>
+                <div class="photo" id="image6">
+                    <img src="img/media23.jpeg" alt="Media Day 2023">
+                    <p><b>Media Day 2023</b></p>
+                </div>
+                <div class="photo" id="image7">
+                    <img src="img/75.png" alt="75 Years of History">
+                    <p><b>75 Years of History</b></p>
+                </div>
+                <div class="photo" id="image8">
+                    <img src="img/LBJ-Score.png" alt="LBJ Scoring Record">
+                    <p><b>Lebron James: All-Time Scoring Leader</b></p>
+                </div>
+                <div class="photo" id="image9">
+                    <img src="img/the-stars.png" alt="The Stars">
+                    <p><b>The Stars</b></p>
+                </div>
+                <div class="photo" id="image10">
+                    <img src="img/trophies.png" alt="Championship Trophies">
+                    <p><b>Championship Trophies</b></p>
+                </div>
+        </div>
+
+        <div class="clearfloat"></div>
+
+        <div id="footer">
+            Information from © 2023 NBA Media Ventures, LLC. and © 2023 Home Box Office, Inc.
+        </div>
+    </body>
+</html>
