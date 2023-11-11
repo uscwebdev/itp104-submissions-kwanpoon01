@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 10 | CSS Effects</title>
+    <style>
+      .container {
+        width: 1200px;
+        height: 500px;
+        margin: auto;
+        background-color: black;
+        transform: translateY(100px);
+      }
+
+      .header {
+        border-style: dashed;
+        border-color: black;
+        margin: auto;
+        width: 500px;
+        text-align: center;
+        transform: translateY(50px);
+      }
+
+      .mochi2 {
+        width: 300px;
+        height: 350px;
+        position: absolute;
+        top: 75px;
+        left: 440px;
+      }
+
+      .mochi3 {
+        width: 300px;
+        height: 350px;
+        position: absolute;
+        top: 75px;
+        left: 420px;
+      }
+
+      .mochi1 {
+        width: 300px;
+        height: 350px;
+        position: absolute;
+        top: 75px;
+        left: 460px;
+      }
+
+      .container:hover > .mochi3 {
+        transform: translateX(-360px) scale(1.25);
+        transition: all 0.75s;
+      }
+
+      .container:hover > .mochi1 {
+        transform: translateX(380px) scale(1.25);
+        transition: all 0.75s;
+      }
+
+      .container:hover > .mochi2 {
+        transform: translateX(10px) scale(1.25);
+        transition: all 0.75s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Sleeping Mochi</h1>
+    </div>
+    <div class="container">
+      <img src="mochi1.JPG" alt="mochi1" class="mochi1">
+      <img src="mochi2.JPG" alt="mochi2" class="mochi2">
+      <img src="mochi3.JPG" alt="mochi3" class="mochi3">
+    </div>
+</body>
