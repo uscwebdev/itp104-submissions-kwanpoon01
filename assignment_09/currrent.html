@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Current Researches of HSCs</title>
+    
+    <style>
+        .clearfloat {
+            clear: both;
+        }
+
+        .bolded {
+            font-weight: bolder;
+        }
+
+        header {
+            margin: 0px;
+            height: 300px; 
+            color: black;
+            text-shadow: 0px 0px 10px white;
+        }
+
+        header p {
+            line-height: 100px;
+            font-size: 3em;
+            position: absolute;
+            left: 400px;
+            color: black;
+        }
+
+        header img {
+            height: 200px;
+            width: auto;
+        }
+
+        #main {
+            width: 2100px;
+            margin: auto;
+        }
+
+        #navbar {
+            width: 2100px;
+        }
+        #nav {
+            width: 2000px;
+            margin: auto;
+            height: 50px;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav li {
+            width: 500px;
+            text-align: center;
+            float: left;
+            background-color: skyblue;
+        }
+        #nav a {
+            text-decoration: none;
+            display: block;
+            line-height: 50px;
+            color: black; 
+            font-size: 1.5em;
+        }
+        #nav li:hover a, #nav #active {
+            color: darkblue;
+            border-bottom: 5px solid darkblue;
+        }
+        #general_intro {
+            padding: 30px;
+        }
+        #general_intro img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 1000px;
+            border: 10px solid  lightgrey;
+        }
+        .brief {
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            width: 2000px;
+            color: black;
+            font-size: 1.7em;
+        }
+
+        .labmouse p {
+            width: 850px;
+            display: none;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 1.4em;
+        }
+        
+        .labmouse:hover >img {
+            opacity: 0.1;
+        }
+        
+        .labmouse:hover p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p><img src="liver.png" alt="liver">Current Research Challenges</p>
+    </header>
+    
+    <div id="main">
+        <div id="navbar">
+            <div id="nav">
+                <ul>
+                    <li><a href="final.html">Overview</a></li>
+                    <li><a id="active" href="current.html">Current Research</a></li>
+                    <li><a href="potential.html">Potential Targets</a></li>
+                    <li><a href="tools.html">Useful Tools</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="general_intro">
+            <p class="brief">Human and rodent HSCs differ in several key aspects, which is important for researchers to consider when using animal models to study liver diseases. </p>
+            <p class="brief"><span class="bolded">For more information, please hover over the figure below</span></p>
+            
+            <div class="labmouse">
+                <img src="labmouse.jpeg" alt="Lab Mouse">
+                <p><b>Human HSCs are scarce due to limited liver tissue access and ethical constraints. In vitro, HSCs rapidly activate, which may not accurately represent their natural state. Variability among HSCs from different individuals adds complexity to research results. Replicating the complex liver microenvironment in vitro is another significant challenge.</b></p>
+            </div>
+            
+            <div class="clearfloat"></div>
+        </div>
+
+        <hr>
+    </div>
+</body>

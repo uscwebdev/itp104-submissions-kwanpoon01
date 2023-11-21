@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Puzzle</title>
+
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            #puzzle {
+                width: 1100px;
+                height: auto;
+                margin: auto;
+            }
+
+            img {
+                height: 250px;
+                width: auto;
+            }
+
+            #r1c1 {
+                position: relative;
+                bottom: 10px;
+                right: 20px;
+                box-shadow: 5px 5px 5px lightgray;
+            }
+
+            #r2c3 {
+                position: relative;
+                bottom: 50px;
+                left: 100px;
+                box-shadow: -5px -5px 5px lightgray;
+            }
+
+            #r3c2 {
+                position: relative;
+                top: 100px;
+                right: 20px;
+                box-shadow: -5px -5px 5px lightgray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Hong Kong</h1>
+
+        <div id="puzzle">
+            <img src="row-1-column-1.jpg" id="r1c1" alt="Top Left">
+            <img src="row-1-column-2.jpg" id="r1c2" alt="Top Center">
+            <img src="row-1-column-3.jpg" id="r1c3" alt="Top Right">
+            <img src="row-2-column-1.jpg" id="r2c1" alt="Middle Left">
+            <img src="row-2-column-2.jpg" id="r2c2" alt="Middle Center">
+            <img src="row-2-column-3.jpg" id="r2c3" alt="Middle Right">
+            <img src="row-3-column-1.jpg" id="r3c1" alt="Bottom Left">
+            <img src="row-3-column-2.jpg" id="r3c2" alt="Bottom Center">
+            <img src="row-3-column-3.jpg" id="r3c3" alt="Bottom Right">
+        </div>
+    </body>
