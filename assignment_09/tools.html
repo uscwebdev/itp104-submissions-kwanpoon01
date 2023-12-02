@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Tools</title>
+    
+    <style>
+        .clearfloat {
+            clear: both;
+        }
+
+        .bolded {
+            font-weight: bolder;
+        }
+
+        header {
+            margin: 0px;
+            height: 300px; 
+            color: black;
+            text-shadow: 0px 0px 10px white;
+        }
+
+        header p {
+            line-height: 100px;
+            font-size: 3em;
+            position: absolute;
+            left: 400px;
+            color: black;
+        }
+
+        header img {
+            height: 200px;
+            width: auto;
+        }
+
+        #main {
+            width: 2100px;
+            margin: auto;
+        }
+
+        #navbar {
+            width: 2100px;
+        }
+        #nav {
+            width: 2000px;
+            margin: auto;
+            height: 50px;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav li {
+            width: 500px;
+            text-align: center;
+            float: left;
+            background-color: skyblue;
+        }
+        #nav a {
+            text-decoration: none;
+            display: block;
+            line-height: 50px;
+            color: black; 
+            font-size: 1.5em;
+        }
+        #nav li:hover a, #nav #active {
+            color: darkblue;
+            border-bottom: 5px solid darkblue;
+        }
+        #general_intro {
+            padding-left: 100px;
+            padding-right: 100px;
+            width: 1900px;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <p><img src="img/liver.png" alt="liver">Useful Tools</p>
+    </header>
+    
+    <div id="main">
+        <div id="navbar">
+            <div id="nav">
+                <ul>
+                    <li><a href="final.html">Overview</a></li>
+                    <li><a href="current.html">Current Research</a></li>
+                    <li><a href="HBV.html">HBV Infection</a></li>
+                    <li><a id="active" href="tools.html">Useful Tools</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="general_intro">
+            <p class="bolded">Primer Design & Order</p>
+            <p>If you cannot find a primer in a paper you can search previously made primers here: <a href="https://www.idtdna.com/site/order/qpcr/predesignedassay">Predesigned qPCR Assays</a></p>
+            <p> Once you get the reference number, go to this website and copy the FASTA file from this website: <a href="https://www.ncbi.nlm.nih.gov/nucleotide/">NCBI Nucleotide</a></p>
+            <p>Then take the FASTA file and copy and paste it into this website (RNA endpoint): <a href="https://apps.thermofisher.com/apps/oligoperfect/#!/design">OligoPerfect™</a></p>
+            <p>Once you get the forward and reverse primer sequence from oligoperfect (or if you get a primer from an article) go here: <a href="https://www.idtdna.com/site/order/oligoentry">Oligo Entry</a></p>
+
+            <div class="clearfloat"></div>
+        </div>
+
+        <hr>
+    </div>
+</body>
